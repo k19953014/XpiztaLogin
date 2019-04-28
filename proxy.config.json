@@ -1,0 +1,7 @@
+{
+  "/api/v1/": {
+    "target": "http://data.ntpc.gov.tw",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

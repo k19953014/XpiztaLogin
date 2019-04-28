@@ -1,0 +1,40 @@
+
+<!-- <button mat-raised-button>Hello World！</button> -->
+<div>
+  <button mat-raised-button color="primary">Primary</button>
+</div>
+<mat-checkbox>Check me!</mat-checkbox>
+<!--
+<mat-form-field>
+  <input matInput placeholder="中文" value="Vegetable">
+</mat-form-field> -->
+
+<button mat-fab color="warn" (click)="openSnackbar()">
+  <span matTooltip="Add">
+    <mat-icon>add</mat-icon>
+  </span>
+</button>
+
+
+<div>
+  <mat-form-field>
+    <mat-select [(ngModel)]="selectedData" (ngModelChange)="getUikeDataStation(selectedData)" placeholder="請選擇一個場站">
+      <mat-option *ngFor="let u of uBike" [value]="u">
+        {{u.sno}}-{{u.sna}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<ul>
+  <li>場站名稱：{{uBikeData.sna}}</li>
+
+  <li>總停車格：{{uBikeData.tot}}</li>
+
+  <li>可借車位數：{{uBikeData.sbi}}</li>
+
+  <li>資料更新時間：{{uBikeData.mday}}</li>
+</ul>
+
+
+
+

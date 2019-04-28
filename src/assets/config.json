@@ -1,0 +1,8 @@
+[
+  {
+      "ClientID":"9D95CDA7-4F3B-4CAA-8ED2-82C0DDB58F39",
+      "WEB_ROOT": "http://hrs-pd55.gss.com.tw/DataHub/",
+      "IsAutoExtendToken": "Y",
+      "ExecEverySecond": "1200"
+  }
+]

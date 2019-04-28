@@ -1,0 +1,18 @@
+<form>
+  <h1>登入</h1>
+    <div>
+        <mat-form-field>
+            <input matInput name="UserID" [(ngModel)]="ViewModel.UserID" placeholder="帳號">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <input type="password" matInput name="Password" [(ngModel)]="ViewModel.Password" placeholder="密碼">
+        </mat-form-field>
+    </div>
+
+    <div>
+      <button mat-raised-button color="primary" (click)="Login()">登入</button>
+    </div>
+
+</form>
